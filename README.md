@@ -8,9 +8,9 @@ An application that runs in browser featuring dynamically updated HTML & CSS. Th
 
 User will have choice of multiple inputs, such as;
 
-Number of Password character
-Lowercase/uppercase characters choices
-Numbers usage
+Number of Password character,
+Lowercase/uppercase characters choices,
+Numbers usage,
 Special characters usage
 
 ## Link to website
@@ -18,4 +18,4 @@ https://princeultim8.github.io/Password-generator/
 
 ## Screenshot 
 
-<img src="./Password generator.png" alt="Password generator" />P
+<img src="./Password generator.png" alt="Password generator"/>P
