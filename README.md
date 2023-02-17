@@ -8,14 +8,14 @@ An application that runs in browser featuring dynamically updated HTML & CSS. Th
 
 User will have choice of multiple inputs, such as;
 
-Minimum of 8 characters, max of 64
-Lowercase/uppercase characters
-Numbers
-Special characters
-Usage
-
+Number of Password character
+Lowercase/uppercase characters choices
+Numbers usage
+Special characters usage
 
 ## Link to website
+https://princeultim8.github.io/Password-generator/
 
 ## Screenshot 
 
+<img src="./Password generator.png" alt="Password generator" />P
