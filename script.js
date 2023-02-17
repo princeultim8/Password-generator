@@ -108,7 +108,7 @@ console.log(array);
 // Global Variables
 // How to provide the user options>
 // The task is to provide password options for the user and allow customisation depending on their preferences
-let passPrompt = prompt("How many characters would you like your password to be?");
+let PwRequest = prompt("How many characters would you like your password to be?");
 let upperChar = confirm("Would you like to include Uppercase Characters in your password? (OK = yes, cancel = no)");
 let lowerChar = confirm("Would you like to include Lowercase Characters in your password?(OK = yes, cancel = no)");
 let numChar = confirm("Would you like to include Numbers in your password?(OK = yes, cancel = no)");
@@ -117,13 +117,13 @@ let specialChar = confirm("Would you like to include Special Characters in your 
 // Function to prompt user for password options
 function getPasswordOptions() {
   // This is to determine if the user input is an integer. If the passed value is a number value then the function proceeds, if not, the function loops through the block of code again.
-  console.log(passPrompt);
-  while (isNaN(passPrompt) || passPrompt < 10 || passPrompt > 65) {
-    if (passPrompt === null || passPrompt < 10 || passPrompt > 65) {
+  console.log(PwRequest);
+  while (isNaN(PwRequest) || PwRequest < 10 || PwRequest > 65) {
+    if (PwRequest === null || PwRequest < 10 || PwRequest > 65) {
       return;
     }
     alert("Please enter a value between 10 and 65.");
-    passPrompt = prompt("How many characters would you like your password to be?");
+    PwRequest = prompt("How many characters would you like your password to be?");
   }
 // An if statement to verify through the user inputs to see is the value for each character type is either true or false.
   if (!upperChar && !lowerChar && !numChar && !specialChar) {
@@ -139,7 +139,7 @@ function getRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// calls back the variable 'array' and stores it in a new varialbe 'arr', which is also used as a parameter for the function
+// calls back the variable 'array' and stores it in a new variable 'arr', which is also used as a parameter for the function
 let arr = array;
 console.log(getRandom(arr));
 
@@ -173,12 +173,12 @@ function generatePassword() {
       console.log("Not added any special characters")
     }
 
-    // User inputs a value to determine how many characters they would like for their password (passPrompt)
-    // The for loop generates values up until the value the user has set e.g., user inputs '16', the code loops 16 times, and generates 16 characters.
+    // User inputs a value to determine how many characters they would like for their password
+    // The for loop generates values up until the value the user has set e.g., user inputs '10', the code loops 10 times, and generates 16 characters.
 
-    for (var i = 0; i < passPrompt; i++) {
+    for (var i = 0; i < PwRequest; i++) {
       // The password variable is called and the getRandom() function is called, using characterArray as a parameter
-      // This takes in the elements stored in characterArray and randomises a series of values to be stored in 'password'
+      // This takes in the elements stored in characterArray and randomizes a series of values to be stored in 'password'
       password = password + getRandom(characterArray);
     }
 
